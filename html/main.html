@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechCon24</title>
     <link rel="stylesheet" href="../css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery CDN -->
+    <!-- Google Maps SDK -->
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg9AUTXIbuxbBV77zwJau3QENWrRUyHfI&callback=console.debug&libraries=maps,marker&v=beta"></script>
 </head>
 
@@ -18,6 +19,8 @@
         <img src="../icons/arrowwhite.png" alt="arrow" id="arrow">
     </div>
     
+    <!-- Navbar HTML -->
+    <!-- Navbar start -->
     <div class="burger" id="on">
         <img src="../icons/whiteburger.png" alt="nav-burger" width="50px">
     </div>
@@ -32,15 +35,23 @@
         <div> <a href="speakers.html">Speakers</a> </div>
         <div> <a href="contact.html">Contact</a> </div>
     </div>
+    <!-- Navbar end -->
+    <!-- Navbar HTML -->
     
 
     <div class="venue" id="venue">
+
+        <!-- Map of location fetched from google maps sdk -->
+        <!-- Map start -->
         <div id="map">
             <gmp-map center="51.50551223754883,-0.023490384221076965" zoom="14" map-id="canary">
                 <gmp-advanced-marker position="51.50551223754883,-0.023490384221076965" title="My location">
                 </gmp-advanced-marker>
             </gmp-map>
         </div>
+        <!-- Map end -->
+        <!-- Map of location fetched from google maps sdk -->
+
 
         <div class="details">
             <p class="d1">Join us at the <b>Canary Wharf</b> Arena!</p>
@@ -55,15 +66,25 @@
                 <li><p><span style="font-weight: bold; font-style: italic;">Startup Pitch Competition</span>: Witness the battle of the most promising startups <br> as they compete for funding and recognition.</p></li>
             </ul>
         </div>
+
     </div>
 
+
+    <!-- Register action button as footer -->
+    <!-- Footer start -->
     <div class="reg">
         <p class="reg1">Register now to secure your spot!</p>
         <p class="reg2">Early bird tickets are available until December 1st, 2023.</p>
         <a href="register.html"><button id="reg3" type="submit">Register</button></a>
     </div>
+    <!-- Footer end -->
+    <!-- Register action button as footer -->
+
 
     <script src="../js/main.js"></script>
+
+    <!-- Script to scroll to venue section from arrow-->
+    <!-- Animation start -->
     <script>
         $(document).ready(function(){
             $("#arrow").click(function() {
@@ -73,6 +94,8 @@
     });
         });
     </script>
+    <!-- Animation end -->
+    <!-- Script to scroll to venue section from arrow-->
 
 </body>
 </html>

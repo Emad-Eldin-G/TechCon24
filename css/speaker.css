@@ -126,9 +126,15 @@ h1 {
     border-radius: 15px;
 
     background-color: rgba(255, 255, 255, 0.6);
+    transition: all easy 0.5s;
     animation: slide-in 1s ease-in-out;
 
 }
+
+.card1:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .card2 {
     flex-grow: 1;
     flex-basis: 30%;
@@ -142,6 +148,11 @@ h1 {
     animation: slide-in 1s ease-in-out;
 
 }
+
+.card2:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .card3 {
     flex-grow: 1;
     flex-basis: 30%;
@@ -154,6 +165,10 @@ h1 {
     background-color: rgba(255, 255, 255, 0.6);
     animation: slide-in 1s ease-in-out;
 
+}
+
+.card3:hover {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #image {
@@ -186,6 +201,10 @@ h1 {
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
+}
+
+#bird:hover {
+    transform: scale(1.15);
 }
 
 
