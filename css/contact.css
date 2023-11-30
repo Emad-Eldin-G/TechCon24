@@ -51,6 +51,7 @@ h1 {
     display: block;
     cursor: pointer;
 }
+
 .burger-x {
     z-index: 1000;
     position: fixed;
