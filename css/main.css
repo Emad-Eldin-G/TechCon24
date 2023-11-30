@@ -242,12 +242,14 @@ body {
 
 @media only screen and (max-width: 1000px) {
     .reg {
-        top: 135rem;
+        top: 150rem;
         bottom: 0;
         font-size: 20px;
     }
     #reg3 {
         font-size: 15px;
         margin-top: 15px;
+        justify-content: center;
+        align-items: center;
     }
 }
