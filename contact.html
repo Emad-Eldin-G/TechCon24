@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon24</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg9AUTXIbuxbBV77zwJau3QENWrRUyHfI&callback=console.debug&libraries=maps,marker&v=beta"></script>
+</head>
+
+<body>
+
+    <div class="burger" id="on">
+        <img src="icons/whiteburger.png" alt="nav-burger" width="50px">
+    </div>
+    <div class="burger-x" id="off">
+        <img src="icons/whitex.png" alt="nav-x" width="50px">
+    </div>
+
+    <center><h1>Send us an email <span id="emoji">✉️</span></h1></center>
+
+    <div class="navbar" id="nav">
+        <div> <a href="main.html">Home</a> </div>
+        <div> <a href="register.html">Register</a> </div>
+        <div> <a href="schedule.html">Schedule</a> </div>
+        <div> <a href="speakers.html">Speakers</a> </div>
+        <div> <a href="contact.html">Contact</a> </div>
+    </div>
+    
+    <div class="wrapper">
+        <form id="form-reg" onsubmit="Mail();return false">
+            <input type="text" name="Subject" id="subject" placeholder="Subject" required>
+            <textarea name="Text1" id="body" cols="40" rows="10" placeholder="Body"></textarea>
+            <button type="button" onclick="send()">Send</button>
+        </form>
+        </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

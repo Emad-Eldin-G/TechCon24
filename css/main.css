@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    background: black;
+    background-repeat: no-repeat;
+    font-family: 'Merriweather', 'Gotham', sans-serif;
+}
+
+.techcon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#Header {
+    font-size: 100px;
+
+    color: white;
+    transition: ease all .5s;
+}
+
+#Header-low {
+    font-size: 30px;
+
+    color: white;
+    transition: ease all .5s;
+}
+
+#arrow {
+    margin-top: 50px;
+    animation: MoveUpDown 1s ease infinite ;
+}
+#arrow:hover {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-15px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #Header {
+        scale: 0.5;
+    }
+    #Header-low {
+        scale: 0.5;
+        margin-top: -40px;
+    }
+
+}
+
+.burger {
+    z-index: 1000;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+
+}
+.burger-x {
+    z-index: 1000;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    margin: 10px;
+    display: none;
+    cursor: pointer;
+
+}
+
+.navbar {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 500px;
+    z-index: 100;
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.navbar div a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navbar div:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    
+}
+
+.venue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    position: absolute;
+    justify-content: center;
+    margin-top: 10px;
+
+    width: 100vw;
+    height: 60vh;
+    border-radius: 0px;
+}
+
+
+.venue div{
+}
+
+#map {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+
+.details {
+    grid-column: 1;
+    grid-row: 1/3;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 1000px) {
+    .details {
+        padding: 50px;
+    }
+    .map {
+        margin: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .venue {
+        height: 200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%; 
+    }
+    #map {
+        grid-column: 1;
+        grid-row: 6 / 8;
+        margin: 10px;
+        margin-top: 75px;
+    }
+    .details {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 50px;
+    }
+}
+
+.details p{
+    font-color: white;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.d1 {
+    font-size: 45px;
+}
+
+.d2 {
+    font-size: 22px;
+}
+
+.points li {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100rem;
+    bottom: 0;
+
+    font-size: 25px;
+    font-color: white;
+    color: white;
+
+    background-color: rgba(100, 100, 100, 0.5);
+    width: 100%;
+    height: 20%;
+}
+
+#reg3 {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .reg {
+        top: 135rem;
+        bottom: 0;
+        font-size: 20px;
+    }
+    #reg3 {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}

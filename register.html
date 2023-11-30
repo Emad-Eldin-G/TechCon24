@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <center><h1>Get your seat now!</h1></center>
+
+    <div class="burger" id="on">
+        <img src="icons/whiteburger.png" alt="nav-burger" width="50px">
+    </div>
+    <div class="burger-x" id="off">
+        <img src="icons/whitex.png" alt="nav-x" width="50px">
+    </div>
+
+    <div class="navbar" id="nav">
+        <div> <a href="main.html">Home</a> </div>
+        <div> <a href="register.html">Register</a> </div>
+        <div> <a href="schedule.html">Schedule</a> </div>
+        <div> <a href="speakers.html">Speakers</a> </div>
+        <div> <a href="contact.html">Contact</a> </div>
+    </div>
+
+    <div class="wrapper">
+    <form id="form-reg" onsubmit="Mail();return false">
+        <input type="text" name="Name" id="name" placeholder="John Doe" required>
+        <input type="email" name="Email" id="email" placeholder="JohnDoe@mail.com" required>
+        <input type="tel" name="Phone" id="phone" placeholder="07377658432" required>
+        <input type="text" name="Postcode" id="postcode" placeholder="LE5 1SW" required pattern="^[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}$">
+        <input type="date" name="Age" id="age" required>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <div id="thanks">
+        <p>Thank you!</p>
+        <p>See you at the Wharf ✌🏼</p>
+        <p><i><b>December 2023</b></i></p>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
